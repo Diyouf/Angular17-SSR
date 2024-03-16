@@ -1,17 +1,15 @@
 <p>user works!</p>
-<h2>HTML Table</h2>
 
 <h3>{{title}}</h3>
-<table>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-  @for (item of fromParent; track item) {
-    <tr>
-      <th>{{item.company}}</th>
-      <th>{{item.contact}}</th>
-      <th>{{item.country}}</th>
-    </tr>
-  }
-  
-</table>
+
+<div style="display:flex;justify-content: center;align-items: center; ">
+  <div class="card" style="border: 1px solid black; padding: 15px;">
+    
+    <img src="{{fromParent?.images[0]}}" alt="Avatar" style="width:50%;">
+    <div class="container">
+      <h4><b>{{fromParent?.title}}</b></h4>
+      <p>{{fromParent?.brand}}</p>
+      <p>{{fromParent?.description}}</p>
+    </div>
+  </div>
+</div>

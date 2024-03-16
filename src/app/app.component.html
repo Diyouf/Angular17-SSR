@@ -2,11 +2,11 @@
   <label for="">Name:   </label>
   <input type="text" (input)="getInputData($event)" id="inputBox">
   <h3>{{title}}</h3>
-  <button type="button"  (click)="onUserNav()">Nav to User</button>
-  @if(isVisible){
-    <app-user [fromParent]="data" [title]="title" ></app-user>
+  <!-- <button type="button"  (click)="onUserNav()">Nav to User</button> -->
+ 
+    <app-user  [title]="title" ></app-user>
 
-  }
+  
 
   
   <!-- <router-outlet></router-outlet> -->
